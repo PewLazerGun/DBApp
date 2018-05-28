@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBApp", "DBApp\DBApp.csproj", "{5E3FC85D-966C-412F-ADB5-5E22D4863446}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DBAppSetup", "DBAppSetup\DBAppSetup.vdproj", "{41D590FA-8297-4BEE-90C9-DEA94318BB62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{5E3FC85D-966C-412F-ADB5-5E22D4863446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E3FC85D-966C-412F-ADB5-5E22D4863446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E3FC85D-966C-412F-ADB5-5E22D4863446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D590FA-8297-4BEE-90C9-DEA94318BB62}.Debug|Any CPU.ActiveCfg = Debug
+		{41D590FA-8297-4BEE-90C9-DEA94318BB62}.Debug|Any CPU.Build.0 = Debug
+		{41D590FA-8297-4BEE-90C9-DEA94318BB62}.Release|Any CPU.ActiveCfg = Release
+		{41D590FA-8297-4BEE-90C9-DEA94318BB62}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EAC8BF7-CA7A-45B8-8911-9698EE98E5D7}
 	EndGlobalSection
 EndGlobal

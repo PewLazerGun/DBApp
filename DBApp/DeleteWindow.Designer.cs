@@ -54,7 +54,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(12, 329);
+            this.label3.Location = new System.Drawing.Point(12, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 17;
@@ -63,9 +63,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 345);
+            this.button1.Location = new System.Drawing.Point(12, 166);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 40);
             this.button1.TabIndex = 16;
             this.button1.Text = "Удалить";
             this.button1.UseVisualStyleBackColor = true;
@@ -75,14 +75,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 387);
+            this.ClientSize = new System.Drawing.Size(255, 218);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
-            this.MinimumSize = new System.Drawing.Size(379, 426);
+            this.MinimumSize = new System.Drawing.Size(200, 150);
             this.Name = "DeleteWindow";
-            this.Text = "DeleteWindow";
+            this.Text = "Удаление";
             this.ResumeLayout(false);
             this.PerformLayout();
 

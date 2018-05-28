@@ -8,35 +8,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using static DBApp.DatabasePreferences;
 
 namespace DBApp
 {
     public partial class DeleteWindow : Form
     {
-        SqlConnection sqlConnection;
-
+        private Form1 formActivity;
+        public DeleteWindow(Form1 forma)
+        {
+            InitializeComponent();
+            this.formActivity = forma;
+        }
         public DeleteWindow()
         {
             InitializeComponent();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\users\user\documents\visual studio 2015\Projects\DBApp\DBApp\Database.mdf;Integrated Security=True";
-            sqlConnection = new SqlConnection(connectionString);
-            await sqlConnection.OpenAsync();
-
             if (label3.Visible)
                 label3.Visible = false;
 
             if (!string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox2.Text))
             {
-                SqlCommand command = new SqlCommand("DELETE FROM [Table] WHERE [Id]=@Id", sqlConnection);
+                SqlCommand command = new SqlCommand("DELETE FROM [Table] WHERE [Id]=@Id", getDb());
 
                 command.Parameters.AddWithValue("Id", textBox2.Text);
 
-                await command.ExecuteNonQueryAsync();
-
+                command.ExecuteNonQuery();
+                formActivity.RefreshData();
                 Close();
             }
             else
